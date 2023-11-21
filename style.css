@@ -1,0 +1,11 @@
+#product-img{
+    width: 150px !important;
+    height: 150px !important;
+    -webkit-filter: drop-shadow(5px 5px 5px #646464);
+    filter: drop-shadow(5px 5px 10px #747373);
+}
+
+.card-body{
+
+    background-color: rgba(247, 229, 209, 0.4);
+}
