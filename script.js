@@ -69,7 +69,7 @@ let sidebar = document.querySelector('.sidebar');
 
 sidebar.addEventListener('click', e=>{
     if(e.target.hasAttribute("href")){
-        let item = e.target.parentElement.parentElement.remove()
+        e.target.parentElement.parentElement.remove()
     }
     
 })
