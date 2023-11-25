@@ -56,17 +56,17 @@ document.addEventListener('click', (e)=>{
         
 
         sidebar.innerHTML += `
-        <div class="row ">
-        <div class="col">
+        <div class="row mx-0 p-0">
+        <div class="col-3">
         <img class="image img-fluid cart-img" ${cartImg.outerHTML.split(" ")[1]} alt="">
         </div>
-        <div class="col-sm-3">
-        <h5>${productName.textContent}</h5>
+        <div class="col-sm-2">
+        <h5 class="fs-6">${productName.textContent}</h5>
         </div>
         <div class="col-2">
           <h5>${price.textContent}</h5>
         </div>
-        <div class="col-3  px-5">
+        <div class="col-auto  px-5">
           <h5><a href="#">X</a></h5>
         </div>
       </div>
@@ -83,7 +83,9 @@ let sidebar = document.querySelector('.sidebar');
 
 sidebar.addEventListener('click', e=>{
     if(e.target.hasAttribute("href")){
-        e.target.parentElement.parentElement.remove()
+        console.log(e.target.parentElement.parentElement.parentElement);
+        
+        e.target.parentElement.parentElement.parentElement.remove()
     }
     
 })
