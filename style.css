@@ -1,31 +1,31 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.sidebar{
+} */
+/* .sidebar{
     background-color:rgb(172, 250, 250) ;
     height: 900px;
 
-}
+} */
 
-.cart-items{
+/* .cart-items{
     width: 400px ;
-}
+} */
 
-.cart-img{
+/* .cart-img{
     width: 60px;
-}
-.cart-items h5{
+} */
+/* .cart-items h5{
 
     padding: 10px;
 
-}
+} */
 
-.cart-items h5:nth-child(2){
+/* .cart-items h5:nth-child(2){
     width: 120px;
-}
+} */
 
-.sidebar h4 {
+/* .sidebar h4 {
     width: 150px !important;
-}
+} */

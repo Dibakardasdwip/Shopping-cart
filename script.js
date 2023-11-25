@@ -44,20 +44,34 @@ a.getData()
 // Add to cart Button
 document.addEventListener('click', (e)=>{
     if(e.target.className === "btn btn-primary btn-cart"){
+        console.log(e.target);
+        
 
         let parent = e.target.parentElement;
         let cartImg = parent.firstElementChild;
         let productName = cartImg.nextElementSibling;
         let price = productName.nextElementSibling;
         let sidebar = document.querySelector(".car-item");
+        console.log(sidebar);
+        
 
         sidebar.innerHTML += `
-        <div class="container-fluid d-flex cart-items text-center">
+        <div class="row ">
+        <div class="col">
         <img class="image img-fluid cart-img" ${cartImg.outerHTML.split(" ")[1]} alt="">
+        </div>
+        <div class="col-sm-3">
         <h5>${productName.textContent}</h5>
-        <h5>${price.textContent}</h5>
-        <h5><a href="#">X</a></h5>
-      </div>`
+        </div>
+        <div class="col-2">
+          <h5>${price.textContent}</h5>
+        </div>
+        <div class="col-3  px-5">
+          <h5><a href="#">X</a></h5>
+        </div>
+      </div>
+    </div>
+      `
     }
     
 })
@@ -75,6 +89,16 @@ sidebar.addEventListener('click', e=>{
 })
 
 
+
+
+// <div class="col-12 cart-list text-left">
+// <div class="container-fluid cart-items text-center"> //d-flex
+// <img class="image img-fluid cart-img" ${cartImg.outerHTML.split(" ")[1]} alt="">
+// <h5>${productName.textContent}</h5>
+// <h5>${price.textContent}</h5>
+// <h5><a href="#">X</a></h5>
+// </div>
+// </div>
 
 
 
